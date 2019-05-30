@@ -14,6 +14,7 @@
 		E62147AA22A0605600A6C9AB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62147A922A0605600A6C9AB /* Photo.swift */; };
 		E62147AD22A0614F00A6C9AB /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62147AC22A0614F00A6C9AB /* PhotoController.swift */; };
 		E62147B022A069E300A6C9AB /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62147AF22A069E300A6C9AB /* ThemeHelper.swift */; };
+		E62147B222A06D9700A6C9AB /* String+UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62147B122A06D9700A6C9AB /* String+UserDefaultKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E62147A922A0605600A6C9AB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		E62147AC22A0614F00A6C9AB /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		E62147AF22A069E300A6C9AB /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
+		E62147B122A06D9700A6C9AB /* String+UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UserDefaultKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E62147AF22A069E300A6C9AB /* ThemeHelper.swift */,
+				E62147B122A06D9700A6C9AB /* String+UserDefaultKey.swift */,
 			);
 			path = HelperFile;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E62147AD22A0614F00A6C9AB /* PhotoController.swift in Sources */,
+				E62147B222A06D9700A6C9AB /* String+UserDefaultKey.swift in Sources */,
 				E62147AA22A0605600A6C9AB /* Photo.swift in Sources */,
 				E621479522A05FD300A6C9AB /* AppDelegate.swift in Sources */,
 				E62147B022A069E300A6C9AB /* ThemeHelper.swift in Sources */,
@@ -332,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RV79Z7M4VT;
-				INFOPLIST_FILE = PhotoCollection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoCollection/Resorces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RV79Z7M4VT;
-				INFOPLIST_FILE = PhotoCollection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoCollection/Resorces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
