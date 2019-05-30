@@ -1,5 +1,5 @@
 //
-//  PhotoDetailViewController.swift
+//  ThemeSelectionViewController.swift
 //  PhotoCollection
 //
 //  Created by Enayatullah Naseri on 5/30/19.
@@ -8,16 +8,9 @@
 
 import UIKit
 
-class PhotoDetailViewController: UIViewController {
+class ThemeSelectionViewController: UIViewController {
     
-    var photoController: PhotoController?
-    var photo: Photo?
     var themeHelper: ThemeHelper?
-    
-    @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailTextField: UITextField!
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +29,11 @@ class PhotoDetailViewController: UIViewController {
     }
     */
     
-    @IBAction func addPhoto(_ sender: Any) {
+    @IBAction func selectDarkTheme(_ sender: Any) {
     }
     
-    @IBAction func savePhoto(_ sender: Any) {
+    @IBAction func selectBlueTheme(_ sender: Any) {
     }
     
 
-    
-    
 }
