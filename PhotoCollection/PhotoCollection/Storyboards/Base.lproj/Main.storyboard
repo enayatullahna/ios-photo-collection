@@ -77,7 +77,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6Zb-Yr-ZcF" customClass="PhotosCollectionViewCell" customModule="PhotoCollection" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="6Zb-Yr-ZcF" customClass="PhotosCollectionViewCell" customModule="PhotoCollection" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -121,6 +121,7 @@
                                 <connections>
                                     <outlet property="imageView" destination="Mzj-wp-ajb" id="KU2-qi-E2t"/>
                                     <outlet property="photoTitleLabel" destination="ahf-ok-hbk" id="ruO-Sd-IVA"/>
+                                    <segue destination="N21-7s-18b" kind="show" identifier="toPhotoDetail" id="hWG-yh-z0H"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -225,4 +226,7 @@
             <point key="canvasLocation" x="144.92753623188406" y="160.71428571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hWG-yh-z0H"/>
+    </inferredMetricsTieBreakers>
 </document>
