@@ -27,7 +27,7 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         // Do any additional setup after loading the view.
     }
     
-    
+    // add button
     @IBAction func addPhoto(_ sender: Any) {
         
         let imagePicker = UIImagePickerController()
@@ -37,6 +37,7 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         
     }
     
+    // save button
     @IBAction func savePhoto(_ sender: Any) {
         
         guard let photo = photo else {
@@ -64,9 +65,9 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         guard let themePreference = themeHelper?.themePreference else {return}
         
         if themePreference == "Dark" {
-            view.backgroundColor = .lightGray
+            view.backgroundColor = .darkGray
         }else {
-            view.backgroundColor = .blue
+            view.backgroundColor = .yellow // changed color
         }
         
     }

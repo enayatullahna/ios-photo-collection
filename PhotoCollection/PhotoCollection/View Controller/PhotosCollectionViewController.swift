@@ -15,11 +15,20 @@ class PhotosCollectionViewController: UICollectionViewController {
     let photoController = PhotoController()
     let themeHelper = ThemeHelper()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        photoController.
+//
+////        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setTheme()
+        
+        collectionView.reloadData()
     }
 
 
@@ -46,8 +55,8 @@ class PhotosCollectionViewController: UICollectionViewController {
         
         if themePreference == "Dark" {
             collectionView.backgroundColor = .darkGray // set color to dark gray
-        } else if themePreference == "Blue" {
-            collectionView.backgroundColor = .blue // set color to blue
+        } else if themePreference == "Yellow" { // changed color Blue to yello
+            collectionView.backgroundColor = .yellow // set color to blue
         }
     }
 
