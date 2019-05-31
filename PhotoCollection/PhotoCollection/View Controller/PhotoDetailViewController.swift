@@ -27,6 +27,17 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         // Do any additional setup after loading the view.
     }
     
+    func updateViews() {
+        
+        setTheme()
+        
+        guard let photo = photo else {return}
+        
+        detailImageView.image = UIImage(data: photo.imageData)
+        detailTextField.text = photo.title
+        print("Update function")
+    }
+    
     // add button
     @IBAction func addPhoto(_ sender: Any) {
         
@@ -72,16 +83,7 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         
     }
     
-    func updateViews () {
-        
-        setTheme()
-        
-        guard let photo = photo else {return}
-        
-        detailImageView.image = UIImage(data: photo.imageData)
-        detailTextField.text = photo.title
-        
-    }
+
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

@@ -10,11 +10,7 @@ import UIKit
 
 class PhotosCollectionViewCell: UICollectionViewCell {
     
-    var photo: Photo? {
-        didSet {
-            updateViews()
-        }
-    }
+    
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var photoTitleLabel: UILabel!
@@ -28,6 +24,12 @@ class PhotosCollectionViewCell: UICollectionViewCell {
         imageView.image = imageV
         photoTitleLabel.text = photo.title
         
+    }
+    
+    var photo: Photo? {
+        didSet {
+            updateViews()
+        }
     }
     
     
